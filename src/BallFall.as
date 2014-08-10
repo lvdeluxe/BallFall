@@ -223,7 +223,7 @@ public class BallFall extends Sprite {
 	}
 
 	private function onPreRender():void {
-
+		//test
 		if(!_gameOver){
 			applyGyroForce();
 			if(_gameOver = testEmptySpaces()){
