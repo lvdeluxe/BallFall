@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="BallFall">
+    <configurations>
+      <configuration name="BallFall" target-platform="Mobile" pure-as="true" main-class="BallFall" output-file="BallFall.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="12.0">
+          <entries>
+            <entry library-id="08e9785d-76b7-4519-b025-68962c38287e">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIRSDK_14" />
+        </dependencies>
+        <compiler-options>
+          <option name="resourceFilesMode" value="None" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android package-file-name="BallFall" />
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/BallFall-ios-descriptor.xml" package-file-name="BallFall">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/mobile/splash/Default-568h@2x~iphone.png" path-in-package="Default-568h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/mobile/splash/Default-Landscape@2x~ipad.png" path-in-package="Default-Landscape@2x~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/mobile/splash/Default-Landscape~ipad.png" path-in-package="Default-Landscape~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/mobile/splash/Default-Portrait@2x~ipad.png" path-in-package="Default-Portrait@2x~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/mobile/splash/Default-Portrait~ipad.png" path-in-package="Default-Portrait~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/mobile/splash/Default@2x~iphone.png" path-in-package="Default@2x~iphone.png" />
+          </files-to-package>
+          <AirSigningOptions adt-options="-useLegacyAOT no" keystore-path="$MODULE_DIR$/mobile/iphone_dev.p12" provisioning-profile-path="$MODULE_DIR$/mobile/BallFall.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+      <configuration name="BallFallWeb" pure-as="true" main-class="BallFall" output-file="BallFallWeb.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="13.0">
+          <entries>
+            <entry library-id="30dee460-c6e7-4661-86c8-c13c21f46ab9">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIRSDK_13" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
+    </content>
+    <orderEntry type="jdk" jdkName="AIRSDK_14&#9;AIRSDK_13" jdkType="__CompositeFlexSdk__" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="08e9785d-76b7-4519-b025-68962c38287e" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="30dee460-c6e7-4661-86c8-c13c21f46ab9" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+
