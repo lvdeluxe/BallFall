@@ -33,6 +33,7 @@ public class VirtualJoystick {
 
 
 	public function VirtualJoystick(pCallback:Function) {
+
 		_callback = pCallback;
 		GTextureFactory.createFromEmbedded("joystickTexture",JoystickTexture);
 		GTextureFactory.createFromEmbedded("joystickTargetTexture",JoystickTargetTexture);

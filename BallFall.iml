@@ -8,6 +8,9 @@
             <entry library-id="08e9785d-76b7-4519-b025-68962c38287e">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="878b7072-2b7d-458b-93bf-b332c185ad0a">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_14" />
         </dependencies>
@@ -51,6 +54,18 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/bin" />
     </content>
+    <content url="file://$MODULE_DIR$/../libs/Starling-Framework/starling/src">
+      <sourceFolder url="file://$MODULE_DIR$/../libs/Starling-Framework/starling/src" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../libs/away3d-core-fp11/src">
+      <sourceFolder url="file://$MODULE_DIR$/../libs/away3d-core-fp11/src" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../libs/awayphysics-core-fp11/AwayPhysics/src">
+      <sourceFolder url="file://$MODULE_DIR$/../libs/awayphysics-core-fp11/AwayPhysics/src" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../libs/feathers/source">
+      <sourceFolder url="file://$MODULE_DIR$/../libs/feathers/source" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="AIRSDK_14&#9;AIRSDK_13" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
@@ -73,6 +88,17 @@
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="878b7072-2b7d-458b-93bf-b332c185ad0a" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../libs/awayphysics-core-fp11/AwayPhysics/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../libs/awayphysics-core-fp11/AwayPhysics/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>
