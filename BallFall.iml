@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="BallFall">
     <configurations>
-      <configuration name="BallFall" target-platform="Mobile" pure-as="true" main-class="BallFall" output-file="BallFall.swf" output-folder="$MODULE_DIR$/bin">
+      <configuration name="BallFall" target-platform="Mobile" pure-as="true" main-class="Main" output-file="BallFall.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="12.0">
           <entries>
             <entry library-id="08e9785d-76b7-4519-b025-68962c38287e">
@@ -34,7 +34,7 @@
           <AirSigningOptions adt-options="-useLegacyAOT no" keystore-path="$MODULE_DIR$/mobile/iphone_dev.p12" provisioning-profile-path="$MODULE_DIR$/mobile/BallFall.mobileprovision" />
         </packaging-ios>
       </configuration>
-      <configuration name="BallFallWeb" pure-as="true" main-class="BallFall" output-file="BallFallWeb.swf" output-folder="$MODULE_DIR$/bin">
+      <configuration name="BallFallWeb" pure-as="true" main-class="Main" output-file="BallFallWeb.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="13.0">
           <entries>
             <entry library-id="30dee460-c6e7-4661-86c8-c13c21f46ab9">

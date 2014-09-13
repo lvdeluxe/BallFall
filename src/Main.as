@@ -1,16 +1,13 @@
 package {
 import as3GeomAlgo.EarClipper;
 
-import away3d.cameras.lenses.OrthographicLens;
 import away3d.containers.ObjectContainer3D;
-import away3d.containers.Scene3D;
 import away3d.containers.View3D;
 import away3d.controllers.HoverController;
 import away3d.core.base.Geometry;
 import away3d.core.base.SubGeometry;
 import away3d.core.managers.Stage3DManager;
 import away3d.core.managers.Stage3DProxy;
-import away3d.debug.AwayStats;
 import away3d.entities.Mesh;
 import away3d.events.LoaderEvent;
 import away3d.events.Stage3DEvent;
@@ -18,7 +15,6 @@ import away3d.loaders.Loader3D;
 import away3d.loaders.parsers.AWD2Parser;
 import away3d.materials.ColorMaterial;
 import away3d.materials.lightpickers.StaticLightPicker;
-import away3d.primitives.CubeGeometry;
 import away3d.tools.utils.Bounds;
 
 import awayphysics.collision.shapes.AWPBoxShape;
@@ -27,63 +23,27 @@ import awayphysics.debug.AWPDebugDraw;
 import awayphysics.dynamics.AWPDynamicsWorld;
 import awayphysics.dynamics.AWPRigidBody;
 
-import com.deluxe.GAtlasManager;
 import com.deluxe.View2D;
 import com.deluxe.ballfall.JoystickEvent;
 import com.deluxe.ballfall.VirtualJoystick;
-import com.deluxe.ballfall.particles.ExplosionParticles;
-import com.genome2d.Genome2D;
-import com.genome2d.components.GNapeDynamicBody;
-import com.genome2d.components.GNapePhysics;
-import com.genome2d.components.GNapeStaticBody;
-import com.genome2d.components.renderables.GSprite;
-import com.genome2d.components.renderables.particles.GSimpleParticleSystem;
-import com.genome2d.context.GContextConfig;
-import com.genome2d.context.IContext;
-import com.genome2d.context.filters.GFilter;
-import com.genome2d.context.stats.GStats;
-import com.genome2d.node.GNode;
-import com.genome2d.node.factory.GNodeFactory;
-import com.genome2d.textures.GTexture;
-import com.genome2d.textures.GTextureFilteringType;
-import com.genome2d.textures.factories.GTextureFactory;
-import com.greensock.TweenMax;
-import com.greensock.easing.Ease;
-import com.greensock.easing.Expo;
-import com.greensock.easing.Linear;
-import com.greensock.easing.Quad;
-import com.greensock.easing.Quint;
-
-import flash.events.AccelerometerEvent;
-import flash.events.Event;
-import flash.events.StageOrientationEvent;
-import flash.geom.Point;
-import flash.geom.Vector3D;
-import flash.sensors.Accelerometer;
-
-import nape.geom.Geom;
-import nape.geom.Vec2;
 
 import flash.desktop.NativeApplication;
 import flash.desktop.SystemIdleMode;
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
+import flash.events.AccelerometerEvent;
+import flash.events.Event;
 import flash.events.MouseEvent;
-import flash.geom.Rectangle;
-
-import nape.phys.Body;
-import nape.phys.BodyType;
-import nape.phys.Material;
-import nape.shape.Circle;
-import nape.shape.Polygon;
-import nape.shape.Shape;
-import nape.space.Space;
+import flash.events.StageOrientationEvent;
+import flash.geom.Point;
+import flash.geom.Vector3D;
+import flash.sensors.Accelerometer;
 
 import starling.core.Starling;
 
 [SWF(width='1136', height='640', backgroundColor='#003f8c', frameRate='60')]
-public class BallFall extends Sprite {
+public class Main extends Sprite {
 
 	[Embed(source="/assets/3d/scene.awd", mimeType="application/octet-stream")]
 	private var SceneClass:Class;
@@ -114,7 +74,7 @@ public class BallFall extends Sprite {
 	private var lastMouseX:Number;
 	private var lastMouseY:Number;
 
-    public function BallFall() {
+    public function Main() {
 		stage.scaleMode = StageScaleMode.NO_SCALE;
 		stage.align = StageAlign.TOP_LEFT;
 		stage.addEventListener(Event.RESIZE, onResize);
