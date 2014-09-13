@@ -2,110 +2,90 @@
  * Created by lvdeluxe on 14-08-03.
  */
 package com.deluxe.ballfall {
-import com.genome2d.Genome2D;
-import com.genome2d.components.renderables.GSprite;
-import com.genome2d.node.GNode;
-import com.genome2d.node.factory.GNodeFactory;
-import com.genome2d.signals.GNodeMouseSignal;
-import com.genome2d.textures.factories.GTextureFactory;
 
-import flash.events.Event;
-import flash.events.MouseEvent;
 import flash.geom.Point;
 
-public class VirtualJoystick {
+import starling.core.Starling;
+import starling.display.Image;
+import starling.display.Sprite;
+import starling.events.EnterFrameEvent;
+import starling.events.Touch;
+import starling.events.TouchEvent;
+import starling.events.TouchPhase;
+import starling.textures.Texture;
+
+public class VirtualJoystick extends Sprite{
 
 	[Embed(source = "/assets/joystick.png")]
 	private var JoystickTexture:Class;
 	[Embed(source = "/assets/joystickTarget.png")]
 	private var JoystickTargetTexture:Class;
 
-	private var _joystickCenter:Point;
 	private var _joystickRadius:Number = 64;
-	private var _joystickTargetSprite:GSprite;
+	private var _joystickTargetSprite:Image;
 
-	private var _factor:Number = .15;
+	private var _pivotPoint:Point = new Point();
 
-	public var accelX:Number = 0;
-	public var accelY:Number = 0;
-
-	private var _callback:Function;
+	private var evt:JoystickEvent = new JoystickEvent(JoystickEvent.JOYSTICK_UPDATE);
 
 
-	public function VirtualJoystick(pCallback:Function) {
+	public function VirtualJoystick() {
+		var joystickSprite:Image = new Image(Texture.fromBitmap(new JoystickTexture()));
+		addChild(joystickSprite);
 
-		_callback = pCallback;
-		GTextureFactory.createFromEmbedded("joystickTexture",JoystickTexture);
-		GTextureFactory.createFromEmbedded("joystickTargetTexture",JoystickTargetTexture);
+		_joystickTargetSprite = new Image(Texture.fromBitmap(new JoystickTargetTexture()));
+		_joystickTargetSprite.pivotX = _joystickTargetSprite.width>>1;
+		_joystickTargetSprite.pivotY = _joystickTargetSprite.height>>1;
+		_joystickTargetSprite.x = _joystickRadius;
+		_joystickTargetSprite.y = _joystickRadius;
+		addChild(_joystickTargetSprite);
 
-		var node:GNode = GNodeFactory.createNode("joystickContainer");
+		pivotX = _joystickRadius;
+		pivotY = _joystickRadius;
 
-		var joystickSprite:GSprite = GNodeFactory.createNodeWithComponent(GSprite) as GSprite;
-		joystickSprite.textureId = "joystickTexture";
-		joystickSprite.node.mouseEnabled = true;
-		node.addChild(joystickSprite.node);
+		x = Starling.current.nativeStage.fullScreenWidth - (_joystickRadius + 20);
+		y = Starling.current.nativeStage.fullScreenHeight - (_joystickRadius + 20);
 
-		_joystickTargetSprite = GNodeFactory.createNodeWithComponent(GSprite) as GSprite;
-		_joystickTargetSprite.textureId = "joystickTargetTexture";
-		_joystickTargetSprite.node.mouseEnabled = true;
-		node.addChild(_joystickTargetSprite.node);
-		_joystickTargetSprite.node.setActive(false);
-
-		node.transform.x = Genome2D.getInstance().getContext().getNativeStage().fullScreenWidth - (_joystickRadius + 20);
-		node.transform.y = Genome2D.getInstance().getContext().getNativeStage().fullScreenHeight - (_joystickRadius + 20);
-
-		_joystickCenter = new Point(node.transform.x, node.transform.y);
-		joystickSprite.mousePixelEnabled = true;
-
-		Genome2D.getInstance().root.addChild(node);
-		node.mouseEnabled = true;
-		node.mouseChildren = true;
-		node.onMouseDown.add(onMouseDown);
+		_joystickTargetSprite.addEventListener(TouchEvent.TOUCH, onMouseDown);
 	}
 
-	private function onMouseMove(event:MouseEvent):void {
-		if(_joystickTargetSprite.node.isActive()){
-			var isInCircle:Boolean = isPointInCircle(event.stageX, event.stageY);
-			if(isInCircle){
-				_joystickTargetSprite.node.transform.setPosition(event.stageX - _joystickCenter.x, event.stageY - _joystickCenter.y);
-			}else{
-				var angle:Number = Math.atan2(_joystickCenter.y - event.stageY, _joystickCenter.x - event.stageX);//getAngle(event.stageX, event.stageY, _joystickCenter.x, _joystickCenter.y);
-				var pt:Point = new Point();
-				pt.x = _joystickCenter.x + _joystickRadius * Math.cos(angle);
-				pt.y = _joystickCenter.y + _joystickRadius * Math.sin(angle);
-				_joystickTargetSprite.node.transform.setPosition(_joystickCenter.x - pt.x,_joystickCenter.y -  pt.y);
+	private function onMouseDown(event:TouchEvent):void {
+		var touch:Touch = event.getTouch(_joystickTargetSprite);
+		if(touch){
+			if(touch.phase == TouchPhase.BEGAN){
+				_joystickTargetSprite.x = touch.globalX - x + _joystickRadius;
+				_joystickTargetSprite.y	= touch.globalY - y + _joystickRadius;
+				_pivotPoint.x = touch.globalX - pivotX + _joystickTargetSprite.x;
+				_pivotPoint.y = touch.globalY - pivotY + _joystickTargetSprite.y;
+				addEventListener(EnterFrameEvent.ENTER_FRAME, onFrame);
+			}else if(touch.phase == TouchPhase.ENDED){
+				removeEventListener(EnterFrameEvent.ENTER_FRAME, onFrame);
+				evt.velX = 0;
+				evt.velY = 0;
+				dispatchEvent(evt);
+				_joystickTargetSprite.x = _joystickRadius;
+				_joystickTargetSprite.y = _joystickRadius;
+			}else if(touch.phase == TouchPhase.MOVED){
+				var distX:Number = (touch.globalX - _pivotPoint.x);
+				var distY:Number = (touch.globalY - _pivotPoint.y);
+				_joystickTargetSprite.x = distX + pivotX; _joystickTargetSprite.y = distY + pivotY;
+
+				var dis:Number = Math.sqrt((distX * distX) + (distY * distY));
+
+				if(((dis < 0) ? -dis : dis) > pivotX )
+				{
+					var force:Number = dis-pivotX;
+					_joystickTargetSprite.x -= distX/dis*force;
+					_joystickTargetSprite.y -= distY/dis*force;
+				}
 			}
 		}
 	}
 
-	private function onMouseUp(event:MouseEvent):void {
-		_joystickTargetSprite.node.setActive(false);
-		Genome2D.getInstance().getContext().getNativeStage().stage.removeEventListener(MouseEvent.MOUSE_UP, onMouseUp);
-		Genome2D.getInstance().getContext().getNativeStage().stage.removeEventListener(MouseEvent.MOUSE_MOVE, onMouseMove);
-		Genome2D.getInstance().getContext().getNativeStage().stage.removeEventListener(Event.ENTER_FRAME, onFrame);
-		_callback(0,0);
-	}
-
-	private function onMouseDown(sig:GNodeMouseSignal):void {
-
-		_joystickTargetSprite.node.setActive(true);
-		_joystickTargetSprite.node.transform.setPosition(sig.localX, sig.localY);
-		Genome2D.getInstance().getContext().getNativeStage().stage.addEventListener(Event.ENTER_FRAME, onFrame);
-		Genome2D.getInstance().getContext().getNativeStage().stage.addEventListener(MouseEvent.MOUSE_UP, onMouseUp);
-		Genome2D.getInstance().getContext().getNativeStage().stage.addEventListener(MouseEvent.MOUSE_MOVE, onMouseMove);
-	}
-
-	private function onFrame(event:Event):void {
-		accelX = (_joystickTargetSprite.node.transform.x / _joystickRadius) * _factor;
-		accelY = (_joystickTargetSprite.node.transform.y / _joystickRadius) * _factor;
-		_callback(-accelX, accelY);
-//		trace(accelX, accelY);
-	}
-
-	private function isPointInCircle(pX:Number, pY:Number):Boolean{
-
-		var distance:Number = Math.sqrt(Math.pow(_joystickCenter.x - pX, 2) + Math.pow(_joystickCenter.y - pY, 2));
-		return distance <= _joystickRadius;
+	private function onFrame(event:EnterFrameEvent):void {
+		evt.velX = (_joystickTargetSprite.x / _joystickRadius) - 1;
+		evt.velY = (_joystickTargetSprite.y / _joystickRadius) - 1;
+		dispatchEvent(evt);
 	}
 }
 }

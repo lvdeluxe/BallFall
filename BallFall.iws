@@ -33,8 +33,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -50,8 +50,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -64,39 +64,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BallFall.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BallFall.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BallFall.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="73" selection-start="4622" selection-end="4622" vertical-scroll-proportion="0.2982456" vertical-offset="2072" max-vertical-offset="3632">
-              <folding>
-                <element signature="e#10#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExplosionParticles.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/particles/ExplosionParticles.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="43" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1072">
+            <state line="270" column="0" selection-start="9715" selection-end="9715" vertical-scroll-proportion="0.0" vertical-offset="4165" max-vertical-offset="7184">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BallFall-ios-descriptor.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BallFall-ios-descriptor.xml">
+      <file leaf-file-name="EarClipper.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../libs/as3GeomAlgo/src/as3GeomAlgo/EarClipper.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="47" selection-start="5074" selection-end="5074" vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="4224">
+            <state line="43" column="60" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-0.31154382" vertical-offset="688" max-vertical-offset="5152">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GNapeDynamicBody.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/genome2d/components/GNapeDynamicBody.as">
+      <file leaf-file-name="JoystickEvent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/JoystickEvent.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="52" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0" vertical-offset="512" max-vertical-offset="816">
+            <state line="14" column="35" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="384">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/events/Event.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="82" selection-start="5291" selection-end="5343" vertical-scroll-proportion="0.0" vertical-offset="1504" max-vertical-offset="2960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View2D.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/deluxe/View2D.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="23" selection-start="345" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="560">
               <folding />
             </state>
           </provider>
@@ -105,25 +112,7 @@
       <file leaf-file-name="VirtualJoystick.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/VirtualJoystick.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="30" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1872">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GAtlasManager.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/deluxe/GAtlasManager.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="52" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="688">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GTextureFactory.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/genome2d/textures/factories/GTextureFactory.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="368" max-vertical-offset="960">
+            <state line="67" column="54" selection-start="2393" selection-end="2393" vertical-scroll-proportion="0.0" vertical-offset="1072" max-vertical-offset="1552">
               <folding />
             </state>
           </provider>
@@ -160,7 +149,11 @@
         <option value="$PROJECT_DIR$/src/com/deluxe/ballfall/particles/ExplosionParticles.as" />
         <option value="$PROJECT_DIR$/src/com/deluxe/GAtlasManager.as" />
         <option value="$PROJECT_DIR$/BallFall-ios-descriptor.xml" />
+        <option value="$PROJECT_DIR$/../libs/Advanced_Joystick/Source/starling/extensions/advancedjoystick/JoyStick.as" />
+        <option value="$PROJECT_DIR$/src/com/deluxe/ballfall/JoystickEvent.as" />
+        <option value="$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/extensions/advancedjoystick/JoyStick.as" />
         <option value="$PROJECT_DIR$/src/com/deluxe/ballfall/VirtualJoystick.as" />
+        <option value="$PROJECT_DIR$/src/com/deluxe/View2D.as" />
         <option value="$PROJECT_DIR$/src/BallFall.as" />
       </list>
     </option>
@@ -168,7 +161,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1612" />
+    <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -197,6 +190,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,6 +219,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BallFall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BallFall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="BallFall" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -232,7 +240,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +255,7 @@
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libs/awayphysics-core-fp11/AwayPhysics/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libs/as3GeomAlgo/src" />
     <property name="FullScreen" value="false" />
     <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -257,17 +264,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
+      <recent name="com.deluxe.ballfall" />
+      <recent name="com.deluxe" />
       <recent name="" />
       <recent name="com.deluxe.ballfall.particles" />
-      <recent name="com.deluxe" />
-      <recent name="com.deluxe.ballfall" />
       <recent name="com" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\deluxe\BallFall\src\com\genome2d\components" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.BallFall_adhoc">
+  <component name="RunManager" selected="Flash App.BallFall_emul">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -511,8 +518,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1612" height="876" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,22 +528,22 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35302013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33691275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38926175" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1994852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25288832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35302013" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3771812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -554,7 +561,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -562,102 +572,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/components/GComponent.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="34" selection-start="1218" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="2528" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/physics/GPhysics.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="688" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BallFall.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="68" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1168">
-          <folding>
-            <element signature="e#10#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/textures/GTexture.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1312" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BallFall-ios-descriptor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="39" selection-start="4831" selection-end="4831" vertical-scroll-proportion="0.0" vertical-offset="1312" max-vertical-offset="4224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/node/GNode.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="443" column="0" selection-start="15669" selection-end="15669" vertical-scroll-proportion="0.0" vertical-offset="7088" max-vertical-offset="14864" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/physics/GPhysics.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BallFall.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="19" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1008">
-          <folding>
-            <element signature="e#10#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/physics/GBody.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="43" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1056" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/node/GNode.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="64" selection-start="10917" selection-end="10917" vertical-scroll-proportion="0.0" vertical-offset="5280" max-vertical-offset="14848" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BallFall-ios-descriptor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="39" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="256" max-vertical-offset="4224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Genome2DContext.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="955" column="1" selection-start="44658" selection-end="44658" vertical-scroll-proportion="0.0" vertical-offset="15122" max-vertical-offset="18560" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/physics/GPhysics.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="98" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="672" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/Genome2D.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="48" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0" vertical-offset="448" max-vertical-offset="4752" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BallFall.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <folding>
-            <element signature="e#10#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/node/GNode.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="307" column="38" selection-start="10067" selection-end="10067" vertical-scroll-proportion="0.0" vertical-offset="4912" max-vertical-offset="14832" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/genome2d/textures/GTexture.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="71" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1168" />
@@ -758,23 +672,9 @@
         <state line="95" column="43" selection-start="2432" selection-end="2432" vertical-scroll-proportion="0.33333334" vertical-offset="1199" max-vertical-offset="4592" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/genome2d/textures/factories/GTextureFactory.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="832">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/tile.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/deluxe/GAtlasManager.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="52" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Genome2DContext.swc!/library.swf">
@@ -784,9 +684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/genome2d/components/GNapeDynamicBody.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="52" selection-start="849" selection-end="849" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <folding />
-        </state>
+        <state line="33" column="9" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="816" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/loaders/AssetLoader.as">
@@ -796,26 +694,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/containers/View3D.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="646" column="12" selection-start="17508" selection-end="17508" vertical-scroll-proportion="0.71428573" vertical-offset="9492" max-vertical-offset="15712">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/core/managers/Stage3DProxy.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="528" column="0" selection-start="15854" selection-end="15854" vertical-scroll-proportion="0.33333334" vertical-offset="8100" max-vertical-offset="9744" />
+        <state line="646" column="12" selection-start="17508" selection-end="17508" vertical-scroll-proportion="0.71428573" vertical-offset="9492" max-vertical-offset="15712" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/genome2d/components/renderables/GMovieClip.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="151" column="67" selection-start="4081" selection-end="4081" vertical-scroll-proportion="0.36563876" vertical-offset="2122" max-vertical-offset="2576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/VirtualJoystick.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="30" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="317" max-vertical-offset="1696">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/greensock.swc!/library.swf">
@@ -825,9 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/particles/ExplosionParticles.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="43" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="976">
-          <folding />
-        </state>
+        <state line="35" column="43" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="976" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BallFall-ios-descriptor.xml">
@@ -842,12 +724,120 @@
         <state line="37" column="76" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.5090909" vertical-offset="224" max-vertical-offset="1168" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/genome2d/textures/factories/GTextureFactory.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="1022" selection-end="1022" vertical-scroll-proportion="-0.27826086" vertical-offset="368" max-vertical-offset="832" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deluxe/GAtlasManager.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="236" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Advanced_Joystick/src/starling/extensions/advancedjoystick/JoyStick.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="39" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.48956886" vertical-offset="0" max-vertical-offset="3376" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/events/Event.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="82" selection-start="5291" selection-end="5343" vertical-scroll-proportion="0.0" vertical-offset="951" max-vertical-offset="2784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/core/managers/Stage3DProxy.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.33333334" vertical-offset="1105" max-vertical-offset="9744" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/events/TouchProcessor.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="0" selection-start="8288" selection-end="8288" vertical-scroll-proportion="0.3174946" vertical-offset="2493" max-vertical-offset="7040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/display/Stage.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="3581" selection-end="3581" vertical-scroll-proportion="0.33261338" vertical-offset="966" max-vertical-offset="3632" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/JoystickEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/display/DisplayObject.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="326" column="0" selection-start="14528" selection-end="14528" vertical-scroll-proportion="0.0" vertical-offset="4646" max-vertical-offset="11968" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/display/DisplayObjectContainer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="354" column="0" selection-start="14461" selection-end="14461" vertical-scroll-proportion="0.21418637" vertical-offset="5206" max-vertical-offset="7312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/events/EventDispatcher.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="0" selection-start="6510" selection-end="6510" vertical-scroll-proportion="0.33189654" vertical-offset="1990" max-vertical-offset="3216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deluxe/ballfall/VirtualJoystick.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="54" selection-start="2393" selection-end="2393" vertical-scroll-proportion="0.0" vertical-offset="607" max-vertical-offset="1376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/Starling-Framework/starling/src/starling/core/Starling.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="24" selection-start="12651" selection-end="12651" vertical-scroll-proportion="0.0" vertical-offset="2896" max-vertical-offset="16688" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/entities/Mesh.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="9" selection-start="5981" selection-end="5981" vertical-scroll-proportion="0.49858356" vertical-offset="2976" max-vertical-offset="5856" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/extrusions/PathExtrude.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="39" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.29461756" vertical-offset="304" max-vertical-offset="20864" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/extrusions/LinearExtrude.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="74" selection-start="3203" selection-end="3203" vertical-scroll-proportion="-0.2719547" vertical-offset="1136" max-vertical-offset="17152" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/tools/commands/Merge.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="318" selection-end="318" vertical-scroll-proportion="-0.11331445" vertical-offset="192" max-vertical-offset="5744" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/away3d-core-fp11/src/away3d/tools/helpers/MeshHelper.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="638" column="24" selection-start="21140" selection-end="21140" vertical-scroll-proportion="0.25212464" vertical-offset="9758" max-vertical-offset="10464" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deluxe/View2D.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="345" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BallFall.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="73" selection-start="4622" selection-end="4622" vertical-scroll-proportion="0.2982456" vertical-offset="2072" max-vertical-offset="3632">
-          <folding>
-            <element signature="e#10#56#0" expanded="true" />
-          </folding>
+        <state line="270" column="0" selection-start="9715" selection-end="9715" vertical-scroll-proportion="0.0" vertical-offset="4165" max-vertical-offset="7184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/as3GeomAlgo/src/as3GeomAlgo/EarClipper.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="60" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-0.31154382" vertical-offset="688" max-vertical-offset="5152">
+          <folding />
         </state>
       </provider>
     </entry>

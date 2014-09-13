@@ -15,6 +15,9 @@
           <sdk name="AIRSDK_14" />
         </dependencies>
         <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+          </map>
           <option name="resourceFilesMode" value="None" />
         </compiler-options>
         <packaging-air-desktop />
@@ -57,6 +60,9 @@
     <content url="file://$MODULE_DIR$/../libs/Starling-Framework/starling/src">
       <sourceFolder url="file://$MODULE_DIR$/../libs/Starling-Framework/starling/src" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../libs/as3GeomAlgo/src">
+      <sourceFolder url="file://$MODULE_DIR$/../libs/as3GeomAlgo/src" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../libs/away3d-core-fp11/src">
       <sourceFolder url="file://$MODULE_DIR$/../libs/away3d-core-fp11/src" isTestSource="false" />
     </content>
@@ -65,6 +71,9 @@
     </content>
     <content url="file://$MODULE_DIR$/../libs/feathers/source">
       <sourceFolder url="file://$MODULE_DIR$/../libs/feathers/source" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../libs/starling-extensions/src">
+      <sourceFolder url="file://$MODULE_DIR$/../libs/starling-extensions/src" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="AIRSDK_14&#9;AIRSDK_13" jdkType="__CompositeFlexSdk__" />
     <orderEntry type="sourceFolder" forTests="false" />
